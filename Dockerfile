@@ -4,10 +4,12 @@ FROM python:3.12-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Install system dependencies (including libGL for OpenCV)
+# Install system dependencies (including libGL for OpenCV, and other dependencies)
 RUN apt-get update && apt-get install -y \
     libgl1-mesa-glx \
     libglu1-mesa \
+    libgthread-2.0-0 \
+    libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the requirements.txt file into the container
