@@ -1,0 +1,15 @@
+/* static/css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+img {
+    display: none; /* We don't need this image tag for video anymore */
+}
